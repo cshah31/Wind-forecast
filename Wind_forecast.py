@@ -4,6 +4,7 @@ Created on Sat Dec 18 2021 1:30 pm.
 
 @author: cshah
 This code is a proprietary of Chinmay Shah (cshah@alaska.edu). The main function of the code is to forecast power generation for wind turbine.
+License: GNU-GPL 3.0
 """
 # Import required libraries
 import time
@@ -125,7 +126,7 @@ def summarize_scores(name, score, scores):
 
 
 ## Main part of the code
-Wind_dataset = pd.read_csv('D:\Optimization\Stochastic_SADMM_Opt\Wind_Forecast\Wind_2years_hourly_Data.csv', header=0, infer_datetime_format=True)
+Wind_dataset = pd.read_csv('\path-to-your-data\your-data.csv', header=0, infer_datetime_format=True)
 data = Wind_dataset['Wind (kW)'].values
 data = data.reshape(len(data),1)
 #########################################################################################################################################################
@@ -183,5 +184,5 @@ plt.show()
 
 Predicted_hourly_load_f = Predicted_Wind_f.ravel()
 df = pd.DataFrame(Predicted_hourly_load_f)
-df.to_csv('D:\Optimization\Stochastic_SADMM_Opt\Wind_Forecast\Wind_hourly_train_forecast_gpu.csv')
+df.to_csv('\path-to-output-folder\output.csv')
 
