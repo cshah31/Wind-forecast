@@ -3,7 +3,7 @@
 Created on Sat Dec 18 2021 1:30 pm. 
 
 @author: cshah
-This code is a proprietary of Chinmay Shah (cshah@alaska.edu). The main function of the code is to forecast power generation for wind turbine.
+Chinmay Shah (cshah@alaska.edu) has proprietary rights to this code. The main function of the code is to forecast power generation for wind turbine.
 License: GNU-GPL 3.0
 """
 # Import required libraries
